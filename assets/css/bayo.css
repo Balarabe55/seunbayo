@@ -30,3 +30,9 @@ h1 {
     line-height: 25px;
     text-align: center;
 }
+
+@media(max-width:784px) {
+    .block {
+        width: 100%;
+    }
+}
