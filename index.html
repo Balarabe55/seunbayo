@@ -1,56 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adebayo cv</title>
-    <link rel="stylesheet" href="assets/css/bayo.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <!-- Link to use google font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div>
-            <p>This is the personal website of 
-            </p>
-            <h1>
-                Adebayo Oluwaseun
-            </h1>
-            <p>
-                also known as seunbayo
-            </p>
+    <header>
+        <div class="logo">
+            <!-- <img src="assets/img/devjane.png" alt="" > -->
         </div>
-        <div class="content">
-            <div class="block">
-                <h2>My twitter page</h2>
-                <a href="https://twitter.com/seunbayoNg">https://twitter.com/seunbayoNg</a>
-                <p>What i like to tweet about</p>
-            </div>
-        
-            <div class="block">
-                <h2>My github repos</h2>
-                <a href="https://github.com/seunbayo">https://github.com/seunbayo</a>
-                <p>some my project repositories</p>
-            </div>
-        
-            <div class="block">
-                <h2>My linkedin</h2>
-                <a href="https://www.linkedin.com/in/adebayo-oluwaseun-189122100/">
-                    https://www.linkedin.com/in/adebayo-oluwaseun-189122100/
-                </a>
-                <p>my linkedin page</p>
-            </div>
-            
-            <div class="block">
-                <h2>My gitlab</h2>
-                <a href="https://gitlab.com/seunbayo">
-                    https://gitlab.com/seunbayo
-                </a>
-                <p>some of my project repositories</p>
-            </div>
-        </div>
-
-        </div>
-        
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Intoduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Seun Bayo</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Developer</p>
+        <img src="assets/img/seunr.jpg" alt="a picture os seunbayo" class="intro__img">
+    </section>
     
 
+    <!-- Services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Brain Storming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptatem expedita repudiandae aliquid dicta veniam accusamus! Minima sint commodi tempora optio beatae dignissimos praesentium, autem iusto eius laudantium deserunt alias.</p>
+            </div>
+            <div class="service">
+                <h3>Engineering</h3>
+                <p>In building JavaScript applications and solid infrastructure, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, definitive solutions optimized for scale — performance and scalabilty are priorities on my radar.</p>
+            </div>
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cumque inventore harum sint accusantium, neque asperiores vel repellendus autem molestiae obcaecati veniam a quis natus voluptatibus dolorum consectetur beatae consequuntur.</p>
+            </div>
+        </div>
+        <a href="#work" class="btn" >My work</a>
+    </section>
 
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Full-Stack JavaScript dev.</p>
+        
+        <div class="about-me__body">
+            <p>
+                I am a Front-End Engineer that is  passionate about solving problems, developing innovative products geared toward simplifying & Improving life.
+                I am knowledgeable  in client-side technologies, HTML, CSS, and JavaScript. My markup is always semantic and accessible  and can even navigate my way around any server-side application Built with nodeJs.
+                I always build dynamic, reusable user interfaces and driven by a desire to work on technology with a purpose.I prefer gatherings where my  cognitive, interpersonal relationship and competencies can be enhanced and effectively utilized to improve operations that contribute to the development of my community and my country as a whole.
+            </p>
+        </div>
+        <img src="assets/img/seunb.jpg" alt="" class="about-me__img">
+    </section>
+
+    <!-- My work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">Some of my work</p>
+        <div class="portfolio">
+            <a href="" class="portfolio__item">
+                <img src="assets/img/portfolio-03.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="" class="portfolio__item">
+                <img src="assets/img/portfolio-02.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="" class="portfolio__item">
+                <img src="assets/img/portfolio-01.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="" class="portfolio__item">
+                <img src="assets/img/portfolio-01.jpg" alt="" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+ <!--    Footer -->
+ <footer class="footer">
+     <a href="mailto:seunbayo83@gmail. com" class="footer__link">
+         seunbayo
+     </a>
+     <ul class="social-list">
+        <li class="social-list__item">
+             <a href="https://github.com/seunbayo" class="social-list__link"><i class="fab fa-github"></i></a>
+        </li>
+        <li class="social-list__item">
+            <a href="https://www.facebook.com/SeunbayoNg" class="social-list__link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="social-list__item">
+            <a href="https://twitter.com/SeunbayoNg" class="social-list__link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="social-list__item">
+            <a href="https://www.linkedin.com/in/seunbayo/" class="social-list__link"></a><i class="fab fa-linkedin-in"></i></li>
+     </ul>
+ </footer>
+    
+ <script src="assets/js/app.js"></script>
 </body>
 </html>
